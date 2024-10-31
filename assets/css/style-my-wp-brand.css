@@ -1,0 +1,381 @@
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+#wpbody-content {
+    width: calc(100% - 15px);
+}
+
+.mwb-title {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 9px 0 4px;
+    line-height: 1.3;
+    margin: 0px 0px 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+html[dir="rtl"] .switch {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 8px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #061d90;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.d-none {
+    display: none;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.mwb-btab {
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.mwb-btab a {
+    background: #fff;
+    display: inline-flex;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #666;
+}
+
+.mwb-btab a:first-child {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.mwb-btab a:last-child {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.mwb-btab a:hover,
+.mwb-btab a:focus {
+    outline: 0;
+    box-shadow: none;
+    background-color: #061d90;
+    color: #fff;
+}
+
+.mwb-btab button {
+    float: right;
+    padding: 7px 30px;
+}
+
+html[dir="rtl"] .mwb-btab button {
+    float: left;
+}
+
+.mwb-style,
+.mwb-author,
+.mwb-hide-plugin,
+.hide-menu-body {
+    background: #fff;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.mwb-admin-layout-editor,
+.mwb-login-layout-editor {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin: 20px 0px 30px;
+}
+
+.mwb-admin-layout-editor .aheading,
+.mwb-login-layout-editor .aheading {
+    background: #f7f7f7;
+    margin: 0px;
+    padding: 13px 30px;
+}
+
+.mwb-admin-bar-logo,
+.mwb-login-page-logo {
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.mwb-admin-bar-logo h2,
+.mwb-login-page-logo h2 {
+    margin: 0px;
+}
+
+.mwb-admin-bar-logo .ufile,
+.mwb-login-page-logo .ufile {
+    background: #f7f7f7;
+    padding: 25px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    position: relative;
+    overflow: auto;
+    text-align: center;
+}
+
+.mwb-admin-bar-logo .ufile button,
+.mwb-login-page-logo .ufile button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    color: #a1a1a1;
+}
+
+.mwb-login-page-logo img {
+    height: 200px;
+}
+
+.mwb-admin-bar-logo img {
+    height: 200px;
+}
+
+.mwb-hide-admin-wp-version {
+    border: 1px solid #f0f0f1;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.mwb-hide-admin-wp-version label {
+    cursor: default;
+}
+
+.mwb-change-wp-admin-footer-text,
+.mwb-change-admin-bar-howdy-text {
+    border: 1px solid #f0f0f1;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.mwb-change-wp-admin-footer-text label,
+.mwb-change-admin-bar-howdy-text label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: default;
+}
+
+.mwb-change-wp-admin-footer-text input,
+.mwb-change-admin-bar-howdy-text input {
+    width: 100%;
+    min-height: 40px;
+    background-color: #fdfdfd;
+}
+
+.mwb-hide-plugin label {
+    box-shadow: 0px 2px 7px #d9d9d9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 1.1em;
+}
+
+.top-btn {
+    display: inline-block;
+    border: 1px solid #061d90;
+    background-color: #061d90;
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.top-btn:hover,
+.top-btn:focus {
+    background-color: #011da8;
+    border-color: #011da8;
+    color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+
+table.widefat {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ededed;
+    margin: 0px 0px 0px !important;
+}
+
+.widefat td,
+.widefat th {
+    padding: 15px 10px;
+}
+
+.wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large {
+    padding: 2px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    margin: 0px 2px;
+}
+
+.wp-core-ui .button-group.button-large .button:focus,
+.wp-core-ui .button.button-large:focus {
+    box-shadow: none !important;
+}
+
+.button-info {
+    color: #000 !important;
+}
+
+.button-primary {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.sub-icon {
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: 1.6em;
+}
+
+.notes {
+    background-color: rgb(255 255 255 / 48%);
+    padding: 15px 20px;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+html[dir="rtl"] .sub-icon {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.hide-menu-bg form {
+    background: unset !important;
+    padding: unset !important;
+    border-radius: unset !important;
+    margin-top: unset !important;
+}
+
+.hm-default-btn {
+    display: inline-block;
+    border: 1px solid #061d90;
+    padding: 8px 15px;
+    color: #061d90;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hm-default-btn:hover,
+.hm-default-btn:focus {
+    background: #fff;
+    color: #061d90;
+}
+
+.wp-table-responsive {
+    position: relative;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.wp-table-responsive table.fixed {
+    table-layout: auto;
+}
+
+.wrap {
+    margin: 10px 0px 0 2px;
+}
+
+@media (max-width: 782px) {
+    .mwb-btab button {
+        display: none;
+    }
+
+    .wrap {
+        margin-right: 0;
+    }
+}
